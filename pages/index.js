@@ -86,8 +86,8 @@ function Home() {
 					<div className={styles.my_pic}>
 						<Image
 							src={myPic}
-							width={390}
-							height={390}
+							width={320}
+							height={320}
 							alt='Rupam Kerketta'
 							title='Rupam Kerketta'
 						/>
