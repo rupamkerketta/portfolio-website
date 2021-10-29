@@ -21,7 +21,7 @@
 	.nav_item_00,
 	.nav_item_01 {
 		font-family: $theme-font;
-		font-size: 18px;
+		font-size: 1em;
 	}
 
 	.nav_item_01 {
@@ -52,7 +52,7 @@
 .social_links {
 	// border: 1px solid white;
 	position: fixed;
-	left: 100px;
+	left: 10px;
 	.social_line {
 		border: 1px solid $value;
 		height: 400px;
@@ -74,14 +74,14 @@
 	// border: 1px solid white;
 	position: fixed;
 	bottom: 0;
-	right: 10px;
+	right: -50px;
 	.email_content {
 		// border: 1px solid green;
 		transform: rotate(90deg) translateX(-170px);
 		a {
 			color: $sub-heading-color;
 			font-family: $theme-font;
-			font-size: 16px;
+			font-size: 0.8em;
 			letter-spacing: 2px;
 			font-weight: 300;
 		}
@@ -114,7 +114,8 @@
 				color: $sub-heading-color;
 				font-family: $theme-font;
 				font-weight: 300;
-				font-size: 27px;
+				// font-size: 27px;
+				font-size: 1.4em;
 			}
 		}
 
@@ -128,14 +129,14 @@
 			h1 {
 				font-family: $intro-font;
 				font-weight: 400;
-				font-size: 60px;
+				font-size: 2.7em;
 				color: $intro-title-color;
 			}
 
 			h3 {
 				font-family: $theme-font;
 				font-weight: 300;
-				font-size: 27px;
+				font-size: 1.4em;
 				color: $sub-intro-color;
 			}
 		}
@@ -151,7 +152,7 @@
 
 			h3 {
 				color: $sub-heading-color;
-				font-size: 27px;
+				font-size: 1.4em;
 				font-weight: 300;
 				font-family: $theme-font;
 			}
@@ -170,7 +171,7 @@
 			text-align: center;
 			font-family: $theme-font;
 			font-weight: 300;
-			font-size: 18px;
+			font-size: 1em;
 			color: $sub-heading-color;
 		}
 	}
@@ -178,7 +179,7 @@
 	@mixin section_head_style {
 		font-family: $theme-font;
 		font-weight: 300;
-		font-size: 27px;
+		font-size: 1.4em;
 		color: $sub-heading-color;
 		text-align: center;
 	}
@@ -201,7 +202,7 @@
 
 	@mixin paragraph_style {
 		font-family: $theme-font;
-		font-size: 18px;
+		font-size: 1em;
 		font-weight: 300;
 		line-height: 1.7em;
 		color: $sub-intro-color;
@@ -255,7 +256,7 @@
 
 				font-family: $theme-font;
 				font-weight: 300;
-				font-size: 27px;
+				font-size: 1.4em;
 				color: $value;
 				transition: 0.4s all ease;
 
@@ -272,7 +273,7 @@
 		.footer_content {
 			h3 {
 				font-family: $theme-font;
-				font-size: 18px;
+				font-size: 1em;
 				font-weight: 300;
 				text-align: center;
 				color: $sub-heading-color;

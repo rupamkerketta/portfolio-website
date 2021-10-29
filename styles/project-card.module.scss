@@ -35,7 +35,7 @@
 				.nav_item_00,
 				.nav_item_01 {
 					font-family: $theme-font;
-					font-size: 24px;
+					font-size: 1.2em;
 					font-weight: 300;
 				}
 
@@ -67,7 +67,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			font-family: $theme-font;
-			font-size: 14px;
+			font-size: 0.75em;
 			font-weight: 300;
 			color: rgba(255, 255, 255, 0.431);
 
@@ -87,7 +87,7 @@
 			text-align: right;
 			color: $sub-intro-color;
 			font-family: $theme-font;
-			font-size: 18px;
+			font-size: 1em;
 			font-weight: 300;
 			line-height: 1.8em;
 		}
