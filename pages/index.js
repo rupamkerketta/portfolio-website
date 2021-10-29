@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
 
 import Typewriter from 'typewriter-effect'
@@ -9,6 +10,7 @@ import ProjectCard from '../components/project-card'
 import myLogo from '../public/my-logo.svg'
 import myPic from '../public/my-pic.png'
 import myPic2 from '../public/my-pic-2.jpg'
+import nextJsLogo from '../public/nextjs-logo.svg'
 import styles from '../styles/home.module.scss'
 
 function Home() {
@@ -20,31 +22,51 @@ function Home() {
 			</Head>
 			<div className={styles.navigation}>
 				<div className={styles.nav_item_p0}>
-					<Image
-						src={myLogo}
-						width={80}
-						height={80}
-						alt='Rupam Kerketta'
-						title='Rupam Kerketta'
-					/>
+					<Link href='/#main-section'>
+						<a>
+							<Image
+								src={myLogo}
+								width={80}
+								height={80}
+								alt='Rupam Kerketta'
+								title='Rupam Kerketta'
+							/>
+						</a>
+					</Link>
 				</div>
 				<div className={styles.nav_item_p1}>
 					<ul className={styles.nav_item_p11}>
 						<li>
-							<span className={styles.nav_item_00}>[00]-</span>
-							<span className={styles.nav_item_01}>Projects</span>
+							<Link href='/#projects'>
+								<a>
+									<span className={styles.nav_item_00}>[00]-</span>
+									<span className={styles.nav_item_01}>Projects</span>
+								</a>
+							</Link>
 						</li>
 						<li>
-							<span className={styles.nav_item_00}>[01]-</span>
-							<span className={styles.nav_item_01}>Blogs</span>
+							<Link href='/#blogs'>
+								<a>
+									<span className={styles.nav_item_00}>[01]-</span>
+									<span className={styles.nav_item_01}>Blogs</span>
+								</a>
+							</Link>
 						</li>
 						<li>
-							<span className={styles.nav_item_00}>[02]-</span>
-							<span className={styles.nav_item_01}>About Me</span>
+							<Link href='/#about-me'>
+								<a>
+									<span className={styles.nav_item_00}>[02]-</span>
+									<span className={styles.nav_item_01}>About Me</span>
+								</a>
+							</Link>
 						</li>
 						<li>
-							<span className={styles.nav_item_00}>[03]-</span>
-							<span className={styles.nav_item_01}>Contact</span>
+							<Link href='/#contact'>
+								<a>
+									<span className={styles.nav_item_00}>[03]-</span>
+									<span className={styles.nav_item_01}>Contact</span>
+								</a>
+							</Link>
 						</li>
 						<li>
 							<span className={styles.nav_item_01}>Resume()</span>
@@ -52,7 +74,7 @@ function Home() {
 					</ul>
 				</div>
 			</div>
-			<div className={styles.home}>
+			<div id='main-section' className={styles.home}>
 				<div>
 					<section className={styles.main_section}>
 						<div className={styles.first_part}>
@@ -98,10 +120,11 @@ function Home() {
 						</div>
 					</section>
 
-					<div className={styles.navigation_keys}>
+					{/* <div className={styles.navigation_keys}>
 						<h3># Press 0 || 1 || 2 || 3 to switch between sections</h3>
-					</div>
-					<SectionDivide name_p1='[00]-' name_p2='Projects' />
+					</div> */}
+
+					<SectionDivide name_p1='[00]-' name_p2='Projects' id='projects' />
 					<section className={styles.projects_section}>
 						<h2 className={styles.section_head}>
 							Some of the stuff that i&apos;ve built
@@ -152,11 +175,11 @@ function Home() {
 							projectName_p2='Petsweb'
 						/>
 					</section>
-					<SectionDivide name_p1='[01]-' name_p2='Blogs' />
+					<SectionDivide name_p1='[01]-' name_p2='Blogs' id='blogs' />
 					<section className={styles.blogs_section}>
 						<h2 className={styles.section_head}>Work in Progress...</h2>
 					</section>
-					<SectionDivide name_p1='[02]-' name_p2='About Me' />
+					<SectionDivide name_p1='[02]-' name_p2='About Me' id='about-me' />
 					<section className={styles.about_me_section}>
 						<div className={styles.about_me_wrapper}>
 							<p>
@@ -202,7 +225,7 @@ function Home() {
 							/>
 						</div>
 					</section>
-					<SectionDivide name_p1='[03]-' name_p2='Contact' />
+					<SectionDivide name_p1='[03]-' name_p2='Contact' id='contact' />
 					<section className={styles.contact_me_section}>
 						<h2 className={styles.section_head}>Get in Touch</h2>
 						<div className={styles.contact_me_content}>
@@ -213,6 +236,23 @@ function Home() {
 							<div className={styles.contact_button}>
 								<button>Say Hello!!</button>
 							</div>
+						</div>
+					</section>
+
+					<section className={styles.footer_section}>
+						<div className={styles.footer_content}>
+							<h3>Thank you for stopping by.</h3>
+							<h3>Designed and Built by Rupam Kerketta</h3>
+						</div>
+						<div className={styles.footer_tech_name}>
+							<h3>Technology used</h3>
+							<Image
+								src={nextJsLogo}
+								title='Next.js'
+								alt='Next.js'
+								width={70}
+								height={70}
+							/>
 						</div>
 					</section>
 				</div>
