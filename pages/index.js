@@ -72,7 +72,11 @@ function Home() {
 							</Link>
 						</li>
 						<li>
-							<span className={styles.nav_item_01}>Resume()</span>
+							<Link href='/resume.pdf'>
+								<a target='_blank'>
+									<span className={styles.nav_item_01}>Resume()</span>
+								</a>
+							</Link>
 						</li>
 					</ul>
 				</div>
@@ -107,6 +111,15 @@ function Home() {
 							</a>
 						</Link>
 					</div>
+				</div>
+
+				<div className={styles.email_sideline}>
+					<div className={styles.email_content}>
+						<Link href='mailto:dev.kerkettarupam@gmail.com'>
+							<a>dev.kerkettarupam@gmail.com</a>
+						</Link>
+					</div>
+					<div className={styles.email_line}></div>
 				</div>
 			</div>
 
@@ -270,7 +283,11 @@ function Home() {
 								and i’ll try my best to get back to you.
 							</p>
 							<div className={styles.contact_button}>
-								<button>Say Hello!!</button>
+								<Link href='mailto:dev.kerkettarupam@gmail.com'>
+									<a>
+										<button>Say Hello!!</button>
+									</a>
+								</Link>
 							</div>
 						</div>
 					</section>
