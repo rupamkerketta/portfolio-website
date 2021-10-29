@@ -49,6 +49,27 @@
 	}
 }
 
+.social_links {
+	// border: 1px solid white;
+	position: fixed;
+	left: 100px;
+	.social_line {
+		border: 1px solid $value;
+		height: 400px;
+		width: 1px;
+		margin: auto;
+	}
+
+	.social_icons {
+		.social_link_wrapper {
+			// border: 1px solid white;
+			text-align: center;
+			margin-top: 18px;
+			margin-bottom: 18px;
+		}
+	}
+}
+
 .home {
 	margin: auto;
 	padding-top: 150px;

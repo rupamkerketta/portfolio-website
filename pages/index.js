@@ -11,6 +11,9 @@ import myLogo from '../public/my-logo.svg'
 import myPic from '../public/my-pic.png'
 import myPic2 from '../public/my-pic-2.jpg'
 import nextJsLogo from '../public/nextjs-logo.svg'
+import githubLogo from '../public/github-logo.svg'
+import linkedinLogo from '../public/linkedin-logo.svg'
+
 import styles from '../styles/home.module.scss'
 
 function Home() {
@@ -74,6 +77,39 @@ function Home() {
 					</ul>
 				</div>
 			</div>
+			<div className={styles.social_links}>
+				<div className={styles.social_line}></div>
+				<div className={styles.social_icons}>
+					<div className={styles.social_link_wrapper}>
+						<Link href='https://github.com/rupamkerketta' target='_blank'>
+							<a target='_blank'>
+								<Image
+									src={githubLogo}
+									width={30}
+									height={30}
+									alt='Github'
+									title='Github'
+								/>
+							</a>
+						</Link>
+					</div>
+
+					<div className={styles.social_link_wrapper}>
+						<Link href='https://www.linkedin.com/in/rupamkerketta/'>
+							<a target='_blank'>
+								<Image
+									src={linkedinLogo}
+									width={30}
+									height={30}
+									alt='Linkedin'
+									title='Linkedin'
+								/>
+							</a>
+						</Link>
+					</div>
+				</div>
+			</div>
+
 			<div id='main-section' className={styles.home}>
 				<div>
 					<section className={styles.main_section}>
