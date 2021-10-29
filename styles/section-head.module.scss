@@ -1,0 +1,32 @@
+@import '../styles/colors';
+@import '../styles/fonts';
+
+.section_divide {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	.line_left,
+	.line_right {
+		width: 500px;
+		height: 1px;
+		border: 1px solid $line-color;
+	}
+
+	h2 {
+		font-family: $theme-font;
+		font-weight: 300;
+		font-size: 24px;
+	}
+
+	.nav_item_01 {
+		color: $nav-item-01-color;
+	}
+
+	.nav_item_00 {
+		color: $nav-item-00-color;
+	}
+}

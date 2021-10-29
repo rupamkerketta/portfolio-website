@@ -1,0 +1,95 @@
+@import './colors';
+@import './fonts';
+
+.project_card {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	display: flex;
+	justify-content: space-between;
+
+	.project_card_p1 {
+		// border: 1px solid green;
+		width: 52%;
+
+		.project_preview {
+			// border: 1px solid yellow;
+			height: 370px;
+			// box-shadow: 10px 10px 2px solid white;
+		}
+
+		.project_name_links {
+			width: 100%;
+			// border: 1px solid blue;
+			display: flex;
+			justify-content: space-between;
+
+			.project_name,
+			.project_links {
+				margin-top: 20px;
+				height: 50px;
+			}
+
+			.project_name {
+				width: 80%;
+				// border: 1px solid white;
+				.nav_item_00,
+				.nav_item_01 {
+					font-family: $theme-font;
+					font-size: 24px;
+					font-weight: 300;
+				}
+
+				.nav_item_01 {
+					color: $nav-item-01-color;
+				}
+
+				.nav_item_00 {
+					color: $nav-item-00-color;
+				}
+			}
+
+			.project_links {
+				width: 20%;
+				// border: 1px solid purple;
+				display: flex;
+				justify-content: flex-end;
+
+				div {
+					// border: 1px solid white;
+					margin-left: 10px;
+					margin-right: 10px;
+				}
+			}
+		}
+
+		.project_tags {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			font-family: $theme-font;
+			font-size: 14px;
+			font-weight: 300;
+			color: rgba(255, 255, 255, 0.431);
+
+			span {
+				margin-top: 10px;
+				margin-right: 7px;
+				margin-left: 7px;
+			}
+		}
+	}
+
+	.project_card_p2 {
+		width: 40%;
+
+		.project_content {
+			padding: 10px;
+			text-align: right;
+			color: $sub-intro-color;
+			font-family: $theme-font;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 1.8em;
+		}
+	}
+}
