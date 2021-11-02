@@ -237,20 +237,20 @@ function Home() {
 							</p>
 							<p>
 								My interest in web-dev started when I was in my first year of
-								college, I started by making simple UI using just HTML & CSS,
-								eventually i started learning React.js for making dummy
-								projects.
+								college, I started by making UI designs using HTML & CSS,
+								eventually, I started learning React.js and initially made a few
+								dummy projects.
 							</p>
 							<p>
-								Fast-forward to my senior year I created a full blown
-								application using the MERN stack along with my team-mate who
-								helped me a lot in designing the UI and UX of the overall
-								application.
+								Fast-forward to my senior year, I created a full-blown
+								application using the MERN stack from scratch with a beautiful
+								UI and UX.
 							</p>
 							<p>
-								I love learning and working on technologies that make modern
-								web-development possible, I believe that there is always
-								something new and exciting to learn everyday.
+								I love learning and working on technologies that make modern web
+								development possible, curiosity plays a big role in my learning
+								and developing process which acts as a driving force in everyday
+								life.
 							</p>
 							<p>
 								Here are few of the technologies that i work with.
@@ -274,6 +274,7 @@ function Home() {
 							/>
 						</div>
 					</section>
+
 					<SectionDivide name_p1='[03]-' name_p2='Contact' id='contact' />
 					<section className={styles.contact_me_section}>
 						<h2 className={styles.section_head}>Get in Touch</h2>
@@ -281,6 +282,14 @@ function Home() {
 							<p>
 								Whether you have a question or you just wanna say hi feel free
 								and i’ll try my best to get back to you.
+							</p>
+							<br />
+							<p>
+								<Link href='https://wa.me/+918670145462'>
+									<a target='_blank'>Phone: +91&nbsp;8670145462</a>
+								</Link>
+								<br />
+								Email: dev.kerkettarupam@gmail.com
 							</p>
 							<div className={styles.contact_button}>
 								<Link href='mailto:dev.kerkettarupam@gmail.com'>
